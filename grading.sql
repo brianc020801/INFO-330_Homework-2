@@ -12,3 +12,7 @@
 .print "-------------"
 .read question-5.sql
 .print "-------------"
+.read question-6.sql
+.print "-------------"
+.read question-7.sql
+.print "-------------"
