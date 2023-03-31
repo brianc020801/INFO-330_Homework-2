@@ -23,8 +23,9 @@ Hints: `GROUP BY` will be useful for several of these queries, as will `ORDER BY
 
 * (question-1.sql) Show the customer's full name, Invoice ID, Date of the invoice and billing country of customers who are from Brazil.
 * (question-2.sql) Show the sales agent's full name and invoices associated with each sales agent.
-* (question-3.sql) Show the Invoice Total, Customer name, Country and Sale Agent name for all invoices and customers.
+* (question-3.sql) Provide a query that includes the purchased track name AND artist name with each invoice line item.
 * (question-4.sql) Which sales agent made the most in sales in 2010?
 * (question-5.sql) What was the most purchased track of 2013?
 
-### 
+### Extra credit
+* (question-6.sql) Find tracks (id, name and composer) that are part of a line in an invoice. (2pts)

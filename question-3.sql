@@ -1,1 +1,1 @@
--- Show the Invoice Total, Customer name, Country and Sale Agent name for all invoices and customers.
+-- Provide a query that includes the purchased track name AND artist name with each invoice line item.
