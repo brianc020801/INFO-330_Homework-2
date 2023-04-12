@@ -1,1 +1,2 @@
 -- What was the most purchased track of 2013?
+SELECT tracks.Name, count(*) AS Sold FROM tracks, invoice_items, invoices WHERE tracks.TrackId = invoice_items.TrackId AND invoice_items.InvoiceId = invoices.InvoiceId AND strftime('%Y', invoices.InvoiceDate) = "2013" GROUP BY tracks.TrackId ORDER BY Sold DESC;

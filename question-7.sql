@@ -1,1 +1,2 @@
 -- Find tracks (id, name, and composer) that have never been purchased (that is, they aren't part of a line item in an invoice).
+SELECT DISTINCT t.TrackId, t.Name, t.Composer FROM tracks as t LEFT OUTER JOIN invoice_items as iline ON iline.TrackId = t.TrackId WHERE iline.TrackId IS NULL

@@ -1,1 +1,2 @@
 -- Which sales agent made the most in sales in 2010?
+SELECT employees.FirstName || ' ' || employees.LastName AS FullName, count(*) as Sales FROM employees, customers, invoices WHERE invoices.CustomerId = customers.CustomerId AND customers.SupportRepId = employees.EmployeeId AND strftime('%Y', invoices.InvoiceDate) = "2010" GROUP BY employees.EmployeeId ORDER BY Sales DESC;

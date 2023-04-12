@@ -1,1 +1,2 @@
 -- Provide a query that includes the purchased track name AND artist name with each invoice line item.
+SELECT t.Name as TrackName, a.Name as ArtistName, iline.* FROM tracks AS t, artists as a, albums, invoice_items as iline WHERE iline.TrackId = t.TrackId AND t.AlbumId = albums.AlbumId AND albums.ArtistId = a.ArtistId;
